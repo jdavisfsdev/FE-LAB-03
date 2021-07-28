@@ -1,13 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Article component renders Article 1`] = `
+exports[`Search component renders Article 1`] = `
 <DocumentFragment>
   <form>
     <input
       id="search"
       name="search"
+      placeholder="Search"
       type="text"
-      value="hello"
+      value="defaultValue"
     />
     <button>
       Search

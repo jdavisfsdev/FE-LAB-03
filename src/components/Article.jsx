@@ -6,8 +6,7 @@ export default function Article({ title, author, description }) {
     <>
       <h2>{title}</h2>
       <h3>{author}</h3>
-      <p>{description}</p>
-            
+      <p>{description}</p>    
     </>
   );
 }

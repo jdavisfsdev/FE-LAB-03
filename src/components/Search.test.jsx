@@ -2,11 +2,12 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import Search from './Search';
 
-describe('Article component', () => {
+describe('Search component', () => {
   it('renders Article', () => {
     const { asFragment } = render (
       <Search 
-        search="hello"
+        search="defaultValue"
+        onSubmit
         
       />
     );

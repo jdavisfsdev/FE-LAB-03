@@ -14,5 +14,5 @@ export default function Search({ search, onChange, onSubmit }) {
 Search.propTypes = {
   search: PropTypes.string.isRequired,
   onChange: PropTypes.func.isRequired,
-  onSubmit: PropTypes.func.isRequired
+  onSubmit: PropTypes.func
 };
