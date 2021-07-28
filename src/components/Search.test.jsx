@@ -5,7 +5,10 @@ import Search from './Search';
 describe('Article component', () => {
   it('renders Article', () => {
     const { asFragment } = render (
-      <Search />
+      <Search 
+        search="hello"
+        
+      />
     );
     expect(asFragment()).toMatchSnapshot();
   });
