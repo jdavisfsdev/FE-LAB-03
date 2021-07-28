@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 
 export default class NewsMain extends Component {
-  render() {
-    return (
-      <div>
+    state = {
+      articles: [],
+      search: '',
+      loading: true
+    }
+    render() {
+      return (
+        <div>
                 
-      </div>
-    );
-  }
+        </div>
+      );
+    }
 }
