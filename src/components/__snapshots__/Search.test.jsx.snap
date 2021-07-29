@@ -17,3 +17,23 @@ exports[`Search component renders Article 1`] = `
   </form>
 </DocumentFragment>
 `;
+
+exports[`Search component renders Search 1`] = `
+<DocumentFragment>
+  <form>
+    <input
+      data-testid="search"
+      id="search"
+      name="search"
+      placeholder="Search"
+      type="text"
+      value="defaultValue"
+    />
+    <button
+      data-testid="button"
+    >
+      Search
+    </button>
+  </form>
+</DocumentFragment>
+`;
