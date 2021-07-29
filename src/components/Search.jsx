@@ -7,7 +7,7 @@ export default function Search({ search, onChange, onSubmit }) {
   return (
     <form onSubmit={onSubmit}>
       <input data-testid="search" placeholder="Search" id="search" type="text" value={search} name="search" onChange={onChange}  /> 
-      <button>Search</button> 
+      <button data-testid="button" >Search</button> 
     </form>
   );
 }
