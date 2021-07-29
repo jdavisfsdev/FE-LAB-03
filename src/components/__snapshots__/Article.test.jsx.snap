@@ -1,0 +1,17 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Article component renders Article 1`] = `
+<DocumentFragment>
+  <article>
+    <h2>
+      Mama the dog
+    </h2>
+    <h3>
+      Me
+    </h3>
+    <p>
+      need i say more?
+    </p>
+  </article>
+</DocumentFragment>
+`;
