@@ -1,0 +1,7 @@
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    word-wrap: break-word;
+    width: 300px;
+}

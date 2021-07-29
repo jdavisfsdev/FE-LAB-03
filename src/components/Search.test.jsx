@@ -8,6 +8,7 @@ describe('Search component', () => {
       <Search 
         search="defaultValue"
         onSubmit
+        onChange
         
       />
     );

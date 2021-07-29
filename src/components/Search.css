@@ -1,0 +1,16 @@
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input {
+    font-size: 1.2rem;
+}
+
+button {
+    font-size: 1.2rem;
+}
+
+button:hover {
+    cursor: pointer;
+}

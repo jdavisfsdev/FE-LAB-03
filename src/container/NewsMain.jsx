@@ -2,11 +2,12 @@
 import React, { Component } from 'react';
 import Search from '../components/Search';
 import ArticleList from '../components/ArticleList';
+import './NewsMain.css';
 
 const getArticles = async (search) => {
   const res = await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${process.env.KEY}`);
   const json = await res.json();
-  return json;
+  return json.articles;
 };
 
 export default class NewsMain extends Component {
@@ -20,22 +21,24 @@ export default class NewsMain extends Component {
       this.setState({ search: target.value });
     }
 
-    handleSubmit = e => {
+    handleSubmit = async (e) => {
       e.preventDefault();
-    }
-
-    async componentDidMount() {
-      const { match } = this.props;
-      const articles = await getArticles(match.params.search);
+      const articles = await getArticles(this.state.search);
       this.setState({ articles });
     }
 
+    async componentDidMount() {
+      this.setState({ loading: false });
+    }
+
     render() {
-      const { search } = this.state;
+      const { search, articles, loading } = this.state;
+      if(loading) return <h1>Loading</h1>;
+
       return (
-        <div>
+        <div className="NewsMain">
           <Search search={search} onSubmit={this.handleSubmit} onChange={this.handleChange}/>
-          <ArticleList />
+          <ArticleList  articles={articles}/>
         </div>
       );
     }
